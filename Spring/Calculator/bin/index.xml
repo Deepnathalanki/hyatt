@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="calA" class="com.dt.beans.CalA">
+		</bean>
+	<bean id="calB" class="com.dt.beans.CalB">
+	</bean>
+	<bean id="user1" class="com.dt.beans.User">
+	<property name="num1" value="2"></property>
+	<property name="num2" value="5"></property>
+	<property name="c" ref="calA"></property>
+	</bean>
+
+	
+</beans>
